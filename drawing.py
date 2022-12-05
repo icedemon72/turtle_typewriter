@@ -47,6 +47,24 @@ def draw_b(turtle_object, y_start_coordinate = 0, x_start_coordinate = 0, letter
   turtle_object.pendown()
 
   turtle_object.setpos(x_start_coordinate + (letter_width / 2), y_start_coordinate)
-  turtle_object.circle((letter_width / 2), 180)
+  turtle_object.circle((letter_width / 2), 181)
   turtle_object.hideturtle()
+
+def draw_s(turtle_object, y_start_coordinate = 0, x_start_coordinate = 0, letter_width = 25, letter_height = 50):
+  turtle_object.penup()
+  turtle_object.setpos(x_start_coordinate + letter_width, y_start_coordinate + (letter_height * 0.1))
+  turtle_object.pendown()
+
+  turtle_object.setpos(x_start_coordinate + letter_width, y_start_coordinate)
+  turtle_object.setpos(x_start_coordinate + (letter_width * 0.8), y_start_coordinate)
+
+  turtle_object.penup()
+  turtle_object.setpos(x_start_coordinate + letter_width, y_start_coordinate + (letter_height * 0.9))
+  turtle_object.pendown()
+
+  turtle_object.setpos(x_start_coordinate + letter_width, y_start_coordinate + letter_height)
+  turtle_object.setpos(x_start_coordinate + (letter_width * 0.8), y_start_coordinate + letter_height)
+  turtle_object.right(180)
+  turtle_object.circle(letter_width, 181)
+
   turtle_object.hideturtle()
