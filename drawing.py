@@ -64,6 +64,8 @@ def draw_s(turtle_object, x_start_coordinate = 0, y_start_coordinate = 0, letter
 
   turtle_object.setpos(x_start_coordinate + letter_width, y_start_coordinate + letter_height)
   turtle_object.setpos(x_start_coordinate + (letter_width * 0.8), y_start_coordinate + letter_height)
+
+  turtle_object.right(180)
   turtle_object.circle(letter_width, 181)
 
   turtle_object.hideturtle()
