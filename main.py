@@ -13,3 +13,8 @@ for key in characters:
 screen.listen()
 screen.mainloop()
 
+
+
+steps = {"a": [
+    {""}
+]}
